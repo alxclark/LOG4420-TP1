@@ -21,34 +21,32 @@
     </nav>
   </header>
   <main>
-    <section>
-      <h1>Commander</h1>
-      <form action="/confirmation.html">
-        <section>
-          <h1>Contact</h1>
-          <label for="first-name">Prénom</label>
-          <input type="text" name="first-name" id="first-name" required>
+    <h1>Commander</h1>
+    <form action="/confirmation.html">
+      <section>
+        <h2>Contact</h2>
+        <label for="first-name">Prénom</label>
+        <input type="text" name="first-name" id="first-name" required>
 
-          <label for="first-name">Nom</label>
-          <input type="text" name="last-name" id="last-name" required>
+        <label for="first-name">Nom</label>
+        <input type="text" name="last-name" id="last-name" required>
 
-          <label for="email">Adresse courriel</label>
-          <input type="text" name="email" id="email" required>
+        <label for="email">Adresse courriel</label>
+        <input type="text" name="email" id="email" required>
 
-          <label for="phone">Numéro de téléphone</label>
-          <input type="text" name="phone" id="phone" required>
-        </section>
-        <section>
-          <h1>Paiement</h1>
-          <label for="credit-card">Numéro de carte de crédit</label>
-          <input type="text" name="credit-card" id="credit-card" required>
+        <label for="phone">Numéro de téléphone</label>
+        <input type="tel" name="phone" id="phone" required pattern="[0-9]{10}">
+      </section>
+      <section>
+        <h2>Paiement</h2>
+        <label for="credit-card">Numéro de carte de crédit</label>
+        <input type="text" name="credit-card" id="credit-card" required pattern="[0-9]{16}">
 
-          <label for="credit-card-expiry">Date d'expiration de la carte</label>
-          <input type="text" name="credit-card-expiry" id="credit-card-expiry" required>
-        </section>
-        <input type="submit" value="Payer">
-      </form>
-    </section>
+        <label for="credit-card-expiry">Date d'expiration de la carte</label>
+        <input type="text" name="credit-card-expiry" id="credit-card-expiry" required>
+      </section>
+      <input type="submit" value="Payer">
+    </form>
   </main>
   <footer>
     <ul>
